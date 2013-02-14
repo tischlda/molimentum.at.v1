@@ -1,0 +1,11 @@
+16.08.2008 17:58:26	This log contains information about the import operation of the script 'x.txt' into project 'Molimentum.Database' on computer 'WNMIIVIE01108A1' by user'TischlDa.
+16.08.2008 17:58:26	Started importing file: C:\Users\tischlda\Desktop\x.txt 
+16.08.2008 17:58:26	File name C:\Users\tischlda\Desktop\x.txt (size: 177238)
+16.08.2008 17:58:26	Parsing SQL script
+16.08.2008 17:58:27	Total number of batches in script: 200
+16.08.2008 17:58:27	Total number of statements in script: 455
+16.08.2008 17:58:31	Finished importing file: C:\Users\tischlda\Desktop\x.txt
+16.08.2008 17:58:39	Errors and Warnings: 
+16.08.2008 17:58:39	Warning: In the script that you provided to the import operation, one or more statements were not fully understood. These statements were moved to the C:\Project\Private\Molimentum\Molimentum.Database\Scripts\ScriptsIgnoredOnImport.sql file. Review the file contents for additional information.
+16.08.2008 17:58:41	A summary of the Import operation has been saved to the log file C:\Project\Private\Molimentum\Molimentum.Database\Import Script Logs\x_txt_20080816035826.log.
+16.08.2008 17:58:41	Press Finish to Continue.......

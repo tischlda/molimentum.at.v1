@@ -1,0 +1,15 @@
+obj
+bin
+sql
+*.cache
+*.suo
+*.dbproj.user
+*.csproj.user
+*.vbproj.user
+Index.dat
+Storage.dat
+Molimentum.Providers.NHibernate.IntegrationTests/App.config
+Molimentum.Providers.Google.IntegrationTests/App.config
+Molimentum.Tasks.MailClient.IntegrationTests/App.config
+Molimentum.Web/Web.Debug.Config
+Molimentum.Web/Web.Release.Config

@@ -1,0 +1,415 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+----------------------------------------------------------*/
+body
+{
+    background-color: #999999;
+    font-size: .75em;
+    font-family: Verdana, Helvetica, Sans-Serif;
+    margin: 0px 40px 40px 40px;
+    padding: 0px 0px 0px 0px;
+    color: #333333;
+}
+
+a:link
+{
+    color: #336633;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #336633;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #558855;
+    text-decoration: underline;
+}
+a:active
+{
+    color: #558855;
+}
+
+p
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+/* FORMS
+----------------------------------------------------------*/
+
+form
+{
+	padding: 5px 5px 5px 5px;
+	background-color: #f3f3e4;
+}
+
+input[type=text]
+{
+    border: solid 1px #336633;
+}
+
+textarea
+{
+    border: solid 1px #336633;
+}
+
+fieldset
+{
+    border: none;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    font-size: 1.5em;
+}
+h2
+{
+    font-size: 1.3em;
+}
+h3
+{
+    font-size: 1.2em;
+}
+h4
+{
+    font-size: 1.1em;
+}
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+#header
+{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px 15px 0px;
+    background-color: #fffff0;
+}
+
+#header h1
+{
+    color: #bb3333;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+#header h2
+{
+    color: #999999;
+    font-weight: normal;
+    font-size: 11px;
+    letter-spacing: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+#menucontainer
+{
+    background-color: #336633;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#page
+{
+    width: 900px;
+    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+}
+
+#container
+{
+    float: left;
+    width: 900px;
+}
+
+#main
+{
+	clear: left;
+	float: left;
+	width: 640px;
+	display: inline;
+}
+
+#widgets
+{
+    float: right;
+	width: 250px;
+	display: inline;	
+}
+
+#footer
+{
+    clear: both;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    color: #fffff0;
+    text-align: right;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fffff0;
+}
+
+ul#menu li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fffff0;
+}
+
+ul#menu li a:hover
+{
+    background-color: #558855;
+    text-decoration: none;
+}
+
+ul#menu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+    background-color: #fffff0;
+    color: #000;
+}
+
+/* WIDGETS
+----------------------------------------------------------*/
+
+.widget
+{
+    background-color: #f3f3e4;
+    padding: 0px 10px 10px 10px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.widget h1
+{
+    color: #889988;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+.widget h2
+{
+    color: #889988;
+}
+
+ul.linkList
+{
+	list-style-type: none;
+    padding-left: 0px;
+    line-height: 1.6em;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color: Red;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* ENTRIES
+----------------------------------------------------------*/
+
+.entryList
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.entry
+{
+    background-color: #f3f3e4;
+    padding: 0px 10px 5px 10px;
+    margin: 0px 0px 10px 0px;
+	overflow: hidden;
+}
+
+.entry .entry
+{
+	background-color: #e7e7d8;
+}
+
+.entry div
+{
+    clear: both;
+}
+
+.entry h1
+{
+    color: #889988;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+}
+
+.entry h1 a
+{
+    color: #889988;
+    text-decoration: none;
+}
+
+.entry h1 a:hover
+{
+    color: #dd5555;
+    text-decoration: underline;
+}
+
+.entryFooter
+{
+    clear: both;
+    border-top: dashed 1px;
+    padding: 5px 0px 5px 0px;
+}
+
+.entryBody
+{
+	margin: 0px 0px 10px 0px;
+}
+
+.entryBody img
+{
+    clear: both;
+    float: right;
+    margin: 0px 0px 10px 10px;
+}
+
+img.inline
+{
+	clear: none;
+	float: none;
+	border: none;
+	margin: 0px 0px 0px 0px;
+}
+
+.entry img a
+{
+    border: none;
+}
+
+.entryListFooter
+{
+    text-align: center;
+}
+
+/* PICTURES
+----------------------------------------------------------*/
+
+ul.pictureList
+{
+    padding-left: 0px;
+}
+
+ul.pictureList li
+{
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+    line-height: normal;
+    list-style-type: none;
+    float: left;
+}
+
+ul.pictureList li img
+{
+    vertical-align: middle;
+}
+
+
+table.form tr
+{
+	vertical-align: top;
+}
+
+/* MAPS
+----------------------------------------------------------*/
+
+.postMap
+{
+    display: none;
+    width: 320px;
+    height: 200px;
+    clear: both;
+    float: right;
+    margin: 0px 0px 10px 10px;
+}

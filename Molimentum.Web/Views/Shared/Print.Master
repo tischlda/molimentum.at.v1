@@ -1,0 +1,27 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<% Html.EnableClientValidation(); %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <% Html.RenderPartial("HeadScriptsControl"); %>
+        <% Html.RenderPartial("HeadControl", new ViewDataDictionary { { "stylesheet", "~/Content/Print.css" } } ); %>
+        <asp:ContentPlaceHolder ID="Head" runat="server" />
+        <title>Molimentum | <asp:ContentPlaceHolder ID="Title" runat="server">lat.: Bemühung, große Anstrengung</asp:ContentPlaceHolder></title>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                window.print();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="page">
+            <div id="header">
+                <% Html.RenderPartial("HeaderControl"); %>
+            </div>
+            <div id="widemain">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+    </body>
+   <% Html.RenderPartial("FootScriptsControl"); %>
+</html>

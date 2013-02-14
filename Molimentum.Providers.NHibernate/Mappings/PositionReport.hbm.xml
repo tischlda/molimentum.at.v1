@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Molimentum.Core"
+                   namespace="Molimentum.Model">
+
+  <class name="PositionReport">
+    <id name="ID">
+      <generator class="assigned" />
+    </id>
+    <property name="Comment" />
+    <property name="PositionDateTime" />
+    <component name="Position" class="Position">
+      <property name="Latitude" />
+      <property name="Longitude" />
+    </component>
+    <property name="WindDirection" />
+    <property name="WindSpeed" />
+    <property name="Course" />
+    <property name="Speed" />
+
+  </class>
+
+</hibernate-mapping>

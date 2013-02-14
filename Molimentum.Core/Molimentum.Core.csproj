@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{076B8CD7-124E-4866-ACBD-0DAC3A649015}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Molimentum</RootNamespace>
+    <AssemblyName>Molimentum.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah, Version=1.2.14318.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\elmah.corelibrary.1.2.1\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="LumiSoft.Net">
+      <HintPath>..\Libraries\LumiSoft.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.0\lib\NET35\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.2.1.505.0\lib\NET35\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IPagedList.cs" />
+    <Compile Include="Messages.Designer.cs">
+      <DependentUpon>Messages.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Model\Album.cs" />
+    <Compile Include="Model\AlbumSummary.cs" />
+    <Compile Include="Model\FeedFormat.cs" />
+    <Compile Include="Model\IEditablePosition.cs" />
+    <Compile Include="Model\IItem.cs" />
+    <Compile Include="Model\IPosition.cs" />
+    <Compile Include="Model\ITaggable.cs" />
+    <Compile Include="Model\Picture.cs" />
+    <Compile Include="Model\Position.cs" />
+    <Compile Include="Model\PositionReport.cs" />
+    <Compile Include="Model\Post.cs" />
+    <Compile Include="Model\PostCategory.cs" />
+    <Compile Include="Model\PostComment.cs" />
+    <Compile Include="Model\SiteMapChangeFrequency.cs" />
+    <Compile Include="Model\SitemapUrl.cs" />
+    <Compile Include="Model\SitemapUrlSet.cs" />
+    <Compile Include="Model\TagSummary.cs" />
+    <Compile Include="Model\Video.cs" />
+    <Compile Include="PagedList.cs" />
+    <Compile Include="QueryableExtension.cs" />
+    <Compile Include="Repositories\IItemRepository.cs" />
+    <Compile Include="Repositories\IPictureRepository.cs" />
+    <Compile Include="Repositories\IPositionReportRepository.cs" />
+    <Compile Include="Repositories\IPostCategoryRepository.cs" />
+    <Compile Include="Repositories\IPostCommentRepository.cs" />
+    <Compile Include="Repositories\IPostRepository.cs" />
+    <Compile Include="Repositories\IVideoRepository.cs" />
+    <Compile Include="Repositories\PictureRepositoryCache.cs" />
+    <Compile Include="Repositories\VideoRepositoryCache.cs" />
+    <Compile Include="Services\Configuriation\EMailNotificationSetting.cs" />
+    <Compile Include="Services\Configuriation\MvcConfiguration.cs" />
+    <Compile Include="Services\EMailNotificationService.cs" />
+    <Compile Include="Services\FeedService.cs" />
+    <Compile Include="Services\ICacheService.cs" />
+    <Compile Include="Services\IFeedService.cs" />
+    <Compile Include="Services\INotificationService.cs" />
+    <Compile Include="Services\IUrlResolverService.cs" />
+    <Compile Include="Services\UrlResolverService.cs" />
+    <Compile Include="Services\WebCacheService.cs" />
+    <Compile Include="Tasks\MailClient\Configuration\IMessageProcessor.cs" />
+    <Compile Include="Tasks\MailClient\Configuration\MailClientConfiguration.cs" />
+    <Compile Include="Tasks\MailClient\Configuration\MailClientPicturesSetting.cs" />
+    <Compile Include="Tasks\MailClient\Configuration\MailClientSecretSetting.cs" />
+    <Compile Include="Tasks\MailClient\IMailService.cs" />
+    <Compile Include="Tasks\MailClient\MailAttachment.cs" />
+    <Compile Include="Tasks\MailClient\MailClientTask.cs" />
+    <Compile Include="Tasks\MailClient\MailMessage.cs" />
+    <Compile Include="Tasks\MailClient\MessageProcessorBase.cs" />
+    <Compile Include="Tasks\MailClient\ParsedMessage.cs" />
+    <Compile Include="Tasks\MailClient\PictureMessageProcessor.cs" />
+    <Compile Include="Tasks\MailClient\PopMailProvider\Configuration\PopMailProviderConfiguration.cs" />
+    <Compile Include="Tasks\MailClient\PopMailProvider\Configuration\PopMailProviderServerSetting.cs" />
+    <Compile Include="Tasks\MailClient\PopMailProvider\PopMailService.cs" />
+    <Compile Include="Tasks\MailClient\PositionReportMessageProcessor.cs" />
+    <Compile Include="Tasks\MailClient\PostCommentMessageProcessor.cs" />
+    <Compile Include="Tasks\MailClient\PostMessageProcessor.cs" />
+    <Compile Include="Tasks\MailClient\RequestMessageProcessor.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Web\Mvc\ClientScriptIncludeAttribute.cs" />
+    <Compile Include="GeoFormatProvider.cs" />
+    <Compile Include="Web\Mvc\HttpContextLifetimeManager.cs" />
+    <Compile Include="Web\Mvc\IncludeAttribute.cs" />
+    <Compile Include="Web\Mvc\IncludeExtensions.cs" />
+    <Compile Include="Web\Mvc\StyleSheetIncludeAttribute.cs" />
+    <Compile Include="Web\Mvc\UnityBootstrapper.cs" />
+    <Compile Include="Web\Mvc\UnityControllerFactory.cs" />
+    <Compile Include="Web\Mvc\UrlHelperExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasks\Configuration\TasksConfiguration.cs" />
+    <Compile Include="Tasks\Configuration\TaskSetting.cs" />
+    <Compile Include="Tasks\Configuration\TaskSettingCollection.cs" />
+    <Compile Include="Tasks\Configuration\TypeTypeConverter.cs" />
+    <Compile Include="Tasks\ITask.cs" />
+    <Compile Include="Tasks\TaskRunner.cs" />
+    <Compile Include="Tasks\TimerFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

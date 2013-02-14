@@ -1,0 +1,169 @@
+﻿
+--
+--Stored Procedure rights for BasicAccess
+--
+GRANT EXECUTE ON dbo.aspnet_Profile_GetProperties TO aspnet_Profile_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Profile_SetProperties TO aspnet_Profile_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_Profile_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_Profile_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_Profile_BasicAccess
+GO
+--
+--Stored Procedure rights for ReportingAccess
+--
+GRANT EXECUTE ON dbo.aspnet_Profile_GetNumberOfInactiveProfiles TO aspnet_Profile_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Profile_GetProfiles TO aspnet_Profile_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_Profile_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_Profile_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_Profile_ReportingAccess
+GO
+--
+--Additional stored procedure rights for FullAccess
+--
+GRANT EXECUTE ON dbo.aspnet_Profile_DeleteProfiles TO aspnet_Profile_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Profile_DeleteInactiveProfiles TO aspnet_Profile_FullAccess
+GO
+--
+--View rights
+--
+GRANT SELECT ON dbo.vw_aspnet_Applications TO aspnet_Profile_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_Users TO aspnet_Profile_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_Profiles TO aspnet_Profile_ReportingAccess
+GO
+--
+--Stored Procedure rights for BasicAccess
+--
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_IsUserInRole TO aspnet_Roles_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_GetRolesForUser TO aspnet_Roles_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_Roles_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_Roles_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_Roles_BasicAccess
+GO
+--
+--Stored Procedure rights for ReportingAccess
+--
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_IsUserInRole TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_GetRolesForUser TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Roles_RoleExists TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_GetUsersInRoles TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_FindUsersInRole TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Roles_GetAllRoles TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_Roles_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_Roles_ReportingAccess
+GO
+--
+--Additional stored procedure rights for FullAccess
+--
+
+GRANT EXECUTE ON dbo.aspnet_Roles_CreateRole TO aspnet_Roles_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Roles_DeleteRole TO aspnet_Roles_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_AddUsersToRoles TO aspnet_Roles_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UsersInRoles_RemoveUsersFromRoles TO aspnet_Roles_FullAccess
+GO
+--
+--View rights
+--
+GRANT SELECT ON dbo.vw_aspnet_Applications TO aspnet_Roles_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_Users TO aspnet_Roles_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_Roles TO aspnet_Roles_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_UsersInRoles TO aspnet_Roles_ReportingAccess
+GO
+--
+--Stored Procedure rights for BasicAccess
+--
+GRANT EXECUTE ON dbo.aspnet_Paths_CreatePath TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAllUsers_GetPageSettings TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationPerUser_GetPageSettings TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAllUsers_ResetPageSettings TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationPerUser_ResetPageSettings TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAllUsers_SetPageSettings TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationPerUser_SetPageSettings TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_Personalization_GetApplicationId TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_Personalization_BasicAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_Personalization_BasicAccess
+GO
+--
+--Stored Procedure rights for ReportingAccess
+--
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAdministration_FindState TO aspnet_Personalization_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAdministration_GetCountOfState TO aspnet_Personalization_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_Personalization_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_Personalization_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_Personalization_ReportingAccess
+GO
+--
+--Additional stored procedure rights for FullAccess
+--
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAdministration_ResetUserState TO aspnet_Personalization_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAdministration_ResetSharedState TO aspnet_Personalization_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_PersonalizationAdministration_DeleteAllState TO aspnet_Personalization_FullAccess
+GO
+--
+--View rights
+--
+GRANT SELECT ON dbo.vw_aspnet_Applications TO aspnet_Personalization_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_Users TO aspnet_Personalization_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_WebPartState_Paths TO aspnet_Personalization_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_WebPartState_Shared TO aspnet_Personalization_ReportingAccess
+GO
+GRANT SELECT ON dbo.vw_aspnet_WebPartState_User TO aspnet_Personalization_ReportingAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_WebEvent_LogEvent TO aspnet_WebEvent_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_CheckSchemaVersion TO aspnet_WebEvent_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_RegisterSchemaVersion TO aspnet_WebEvent_FullAccess
+GO
+GRANT EXECUTE ON dbo.aspnet_UnRegisterSchemaVersion TO aspnet_WebEvent_FullAccess
+
+GO

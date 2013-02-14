@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Molimentum.Core"
+                   namespace="Molimentum.Model">
+
+  <class name="PostComment">
+    <id name="ID">
+      <generator class="assigned" />
+    </id>
+    <property name="Author" />
+    <property name="Title" />
+    <property name="Body" />
+    <property name="PublishDate" />
+    <property name="Email" />
+    <property name="Website" />
+
+    <many-to-one name="Post"
+       class="Post"
+       column="PostID"
+       cascade="save-update"
+       fetch="join"
+       lazy="proxy"/>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Molimentum.Core"
+                   namespace="Molimentum.Model">
+
+  <class name="PostCategory">
+    <id name="ID">
+      <generator class="assigned" />
+    </id>
+    <property name="Title" />
+    <property name="Body" />
+    <property name="PostListOrder" />
+
+    <bag name="Posts" table="Post" cascade="none" inverse="true" lazy="true" order-by="PublishDate desc">
+      <key column="PostCategoryID" />
+      <one-to-many class="Post" />
+    </bag>
+
+  </class>
+
+</hibernate-mapping>

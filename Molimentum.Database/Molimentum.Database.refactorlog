@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="dfc78a36-b6f1-4eb3-bfe7-55396b2cfbe1" ChangeDateTime="01/24/2009 14:30:45">
+    <Property Name="ElementName" Value="[dbo].[Page]" />
+    <Property Name="ElementType" Value="ISql90Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[Article]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a622587c-fb22-406a-8962-aa0efc1a863f" ChangeDateTime="01/24/2009 14:31:01">
+    <Property Name="ElementName" Value="[dbo].[PageTag]" />
+    <Property Name="ElementType" Value="ISql90Table" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="ISql90Schema" />
+    <Property Name="NewName" Value="[ArticleTag]" />
+  </Operation>
+</Operations>

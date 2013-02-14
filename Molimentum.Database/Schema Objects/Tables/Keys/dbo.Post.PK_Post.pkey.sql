@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[Post]
+	ADD CONSTRAINT [PK_Post]
+	PRIMARY KEY ([ID])
